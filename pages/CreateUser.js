@@ -13,7 +13,7 @@ const CreateUser = ({ navigation }) => {
   const [userEmail, setuserEmail] = useState('');
   const [userNumber, setuserNumber] = useState('');
 
-  function criar_usuario = () => {
+  function criar_usuario() {
     if (!userName || userName === '') {
       alert('Preencha o nome do usuário')
       return

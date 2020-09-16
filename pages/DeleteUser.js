@@ -11,7 +11,7 @@ const db = openDatabase({ name: 'UserDatabase2.db' })
 const CreateUser = ({ navigation }) => {
   const [userId, setUserId] = useState('');
 
-  function deletar_usuario = () => {
+  function deletar_usuario() {
     console.log(userId)
     db.transaction(function (txn) {
       txn.executeSql(

@@ -29,7 +29,7 @@ const CreateUser = ({ navigation }) => {
     });
   }, [])
 
-  function listSeparator = () => {
+  function listSeparator() {
     return (
       <View style={{ height: 0.2, width: '100%', backgroundColor: '#808080' }} />
     )

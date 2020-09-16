@@ -12,7 +12,7 @@ const CreateUser = ({ navigation }) => {
   const [usuarioProcurado, setUsuarioProcurado] = useState('')
   const [usuarioDados, setUsuarioDados] = useState({})
 
-  function procurar_contato = () => {
+  function procurar_contato() {
     console.log(usuarioProcurado)
     db.transaction(function (txn) {
       txn.executeSql(

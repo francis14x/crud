@@ -15,14 +15,14 @@ const UpdateUser = ({ navigation }) => {
   const [userNumber, setuserNumber] = useState('');
 
 
-  function atualizar_estados = (name, email, number) => {
+  function atualizar_estados(name, email, number) {
     setUserName(name)
     setuserEmail(email)
     setuserNumber(number)
   }
 
 
-  function search_user = () => {
+  function search_user() {
     if (!userId || userId === '') {
       alert('Preencha o número do usuário')
       return
@@ -47,7 +47,7 @@ const UpdateUser = ({ navigation }) => {
   }
 
 
-  function atualizar_usuarios = () => {
+  function atualizar_usuarios() {
     console.log(userId)
     db.transaction(function (txn) {
       txn.executeSql(
